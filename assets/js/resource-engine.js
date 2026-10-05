@@ -10,14 +10,15 @@
     .filter(r => (r.status || 'published') === 'published');
 
   const labels = {
-    guide:'Guide', case:'Företagscase', video:'Video', article:'Artikel', collection:'Samling',
+    guide:'Guide', case:'Företagscase', video:'Video', podcast:'Podcast', presentation:'Presentation', article:'Artikel', collection:'Samling',
     'kom-igang':'Kom igång', 'nasta-steg':'Nästa steg', fordjupning:'Fördjupning',
     microsoft:'Microsoft', google:'Google', verktygsoberoende:'Verktygsoberoende',
     lara:'Lära', prova:'Prova', inspireras:'Inspireras', forsta:'Förstå', skapa:'Skapa',
-    'ai-agenter':'AI-agenter', 'visuellt-material':'Visuellt material', videoTopic:'Video',
-    inspiration:'Inspiration', kommunikation:'Text & kommunikation', data:'Data & analys',
-    effektivisering:'Spara tid', marknadsforing:'Marknadsföring', 'ai-bilder':'AI-bilder',
-    'ansvarsfull-ai':'Ansvarsfull AI'
+    'ai-agenter':'AI-agenter', 'visuellt-material':'Bilder & visuellt', videoTopic:'Video',
+    sakerhet:'Säkerhet & dataskydd', podcast:'Poddar', foretagscase:'Företagscase',
+    kunskapsverkstad:'Kunskapsverkstäder', inspiration:'Idéer & inspiration',
+    kommunikation:'Text & kommunikation', data:'Data & Excel', effektivisering:'Spara tid',
+    marknadsforing:'Marknadsföring', 'ai-bilder':'AI-bilder', 'ansvarsfull-ai':'Ansvarsfull AI'
   };
 
   const state = {
@@ -43,6 +44,7 @@
     return String(value || '').toLocaleLowerCase('sv')
       .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
       .replace(/[^a-z0-9åäö\s-]/g,' ')
+      .replace(/-/g,' ')
       .replace(/\s+/g,' ').trim();
   }
 
@@ -53,13 +55,13 @@
 
   function searchable(r){
     return norm([
-      r.title, r.summary,
+      r.title, r.summary, r.source, r.format,
       ...(r.topics || []), ...(r.keywords || []), ...(r.platforms || []), ...(r.intents || [])
     ].join(' '));
   }
 
   function score(r){
-    let s = r.featured ? .6 : 0;
+    let s = (r.featured ? .6 : 0) + Number(r.priority || 0);
     const reasons = [];
     const q = norm(state.query);
     const hay = searchable(r);
@@ -89,7 +91,7 @@
       const platforms = r.platforms || [];
       if(platforms.includes(state.platform)){
         s += 5; reasons.push(labels[state.platform] || state.platform);
-      } else if(platforms.includes('verktygsoberoende')){
+      } else if(['microsoft','google'].includes(state.platform) && platforms.includes('verktygsoberoende')){
         s += 2; reasons.push('Verktygsoberoende');
       } else s -= 4;
     }
@@ -102,8 +104,10 @@
 
     if(state.time !== 'any'){
       const max = Number(state.time);
-      if(Number(r.duration || 0) <= max){
-        s += 2; reasons.push(`≤ ${max} min`);
+      if(r.duration != null && Number.isFinite(Number(r.duration))){
+        if(Number(r.duration) <= max){
+          s += 2; reasons.push(`≤ ${max} min`);
+        } else s -= 3;
       } else s -= 3;
     }
 
@@ -112,10 +116,11 @@
 
   function topicLabel(value){
     const map = {
-      'ai-agenter':'AI-agenter', 'visuellt-material':'Visuellt material', video:'Video',
-      inspiration:'Inspiration', kommunikation:'Text & kommunikation', data:'Data & analys',
-      effektivisering:'Spara tid', marknadsforing:'Marknadsföring', 'ai-bilder':'AI-bilder',
-      'ansvarsfull-ai':'Ansvarsfull AI'
+      'ai-agenter':'AI-agenter', 'visuellt-material':'Bilder & visuellt', video:'Video',
+      sakerhet:'Säkerhet & dataskydd', podcast:'Poddar', foretagscase:'Företagscase',
+      kunskapsverkstad:'Kunskapsverkstäder', inspiration:'Idéer & inspiration',
+      kommunikation:'Text & kommunikation', data:'Data & Excel', effektivisering:'Spara tid',
+      marknadsforing:'Marknadsföring', 'ai-bilder':'AI-bilder', 'ansvarsfull-ai':'Ansvarsfull AI'
     };
     return map[value] || value;
   }
@@ -142,6 +147,10 @@
     if(hasSelections()){
       pool = pool.filter(r => r._match.score > -2);
     }
+    if(state.time !== 'any'){
+      const max = Number(state.time);
+      pool = pool.filter(r => r.duration != null && Number.isFinite(Number(r.duration)) && Number(r.duration) <= max);
+    }
 
     // Keep the list short enough to feel like a recommendation, not a search dump.
     state.playlist = pool.slice(0,6);
@@ -155,19 +164,22 @@
       : '';
     const type = labels[r.type] || r.type || 'Resurs';
     const level = labels[r.level] || r.level || '';
+    const levelTag = level ? `<span class="tag">${esc(level)}</span>` : '';
+    const durationLabel = r.durationLabel || (r.duration != null ? `${esc(r.duration)} min` : 'Tid ej angiven');
+    const targetAttrs = r.external ? ' target="_blank" rel="noopener noreferrer"' : '';
     const url = absoluteUrl(r.url || '#');
     return `<article class="engine-card" data-id="${esc(r.id)}">
       <div class="engine-card-top">
         <span class="tag">${esc(type)}</span>
-        <span class="tag">${esc(level)}</span>
-        <span class="tag">${esc(r.duration || '?')} min</span>
+        ${levelTag}
+        <span class="tag">${esc(durationLabel)}</span>
       </div>
       <h3>${esc(r.title)}</h3>
       <p>${esc(r.summary)}</p>
       ${reasons}
       <p class="engine-platform">${esc(resourcePlatform(r))}</p>
       <div class="engine-actions">
-        <a class="btn" href="${esc(url)}">Öppna →</a>
+        <a class="btn" href="${esc(url)}"${targetAttrs}>Öppna →</a>
         <button class="btn secondary" type="button" data-engine-action="${inList ? 'remove' : 'add'}" data-id="${esc(r.id)}">${inList ? 'Ta bort' : 'Lägg till'}</button>
       </div>
     </article>`;
