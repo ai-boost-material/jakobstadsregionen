@@ -1137,3 +1137,16 @@ main{padding-bottom:70px}
   }
 }
 
+
+/* Let long hero subtitles wrap within the mobile content column. */
+@media(max-width:680px){
+  .materialbank-shell .theme-hero .eyebrow,
+  .materialbank-shell:not(.page-index) > .hero .eyebrow,
+  .materialbank-shell .engine-hero .pilot-badge{
+    width:auto;
+    max-width:100%;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    line-height:1.5;
+  }
+}
