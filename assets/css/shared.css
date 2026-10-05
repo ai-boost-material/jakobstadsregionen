@@ -1108,3 +1108,32 @@ main{padding-bottom:70px}
     padding-bottom:42px;
   }
 }
+
+/* Keep the project name and menu within narrow mobile viewports. */
+@media(max-width:680px){
+  .materialbank-shell .global-site-header .header-inner{gap:12px}
+  .materialbank-shell .global-site-header .brand{
+    flex:1 1 auto;
+    min-width:0;
+    gap:8px;
+    white-space:normal;
+  }
+  .materialbank-shell .global-site-header .brand-text{
+    min-width:0;
+    font-size:clamp(12px,3.5vw,14px);
+    line-height:1.35;
+    overflow-wrap:anywhere;
+  }
+  .materialbank-shell .global-site-header .brand-project,
+  .materialbank-shell .global-site-header .brand-region{display:block}
+  .materialbank-shell .global-site-header .brand small{
+    margin-top:3px;
+    font-size:10px;
+  }
+  .materialbank-shell .global-site-header .mobile-menu{
+    flex:0 0 auto;
+    margin-left:0;
+    min-height:44px;
+  }
+}
+

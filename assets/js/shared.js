@@ -57,7 +57,7 @@
     const links=items.map(([label,target])=>`<a href="${resolveSiteUrl(target)}">${label}</a>`).join('');
     header.innerHTML=`
       <div class="container header-inner">
-        <a class="brand" href="${resolveSiteUrl('index.html')}"><span class="brand-mark"></span><span>AI Boost Jakobstadsregionen<small>MATERIALBANK</small></span></a>
+        <a class="brand" href="${resolveSiteUrl('index.html')}"><span class="brand-mark"></span><span class="brand-text"><span class="brand-project">AI Boost</span> <span class="brand-region">Jakobstadsregionen</span><small>MATERIALBANK</small></span></a>
         <nav class="main-nav" aria-label="Huvudnavigation">
           ${links}
           <a class="nav-cta" href="${resolveSiteUrl('hitta.html')}">Hitta rätt material</a>
@@ -83,7 +83,7 @@
       if(!open){
         nav.style.display='flex';
         nav.style.position='absolute';
-        nav.style.top='64px';
+        nav.style.top='100%';
         nav.style.left='0';
         nav.style.right='0';
         nav.style.background='#101214';
@@ -285,3 +285,4 @@
     injectProjectBranding();
   });
 })();
+
