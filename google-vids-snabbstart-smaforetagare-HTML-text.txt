@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Praktisk steg-för-steg-guide för småföretagare: skapa en enkel marknadsföringsvideo i Google Vids med bilder, text, övergångar och musik." name="description"/>
+<title>Kom snabbt igång med Google Vids · Novia</title>
+
+
+
+
+<link href="assets/css/shared.css" rel="stylesheet"/><script defer="True" src="assets/js/shared.js"></script>
+  <meta name="materialbank:id" content="google-vids-snabbstart">
+  <meta name="materialbank:type" content="guide">
+  <meta name="materialbank:summary" content="Skapa en enkel video i Google Vids med färdiga bilder, kort text, övergångar och musik.">
+  <meta name="materialbank:topics" content="video,visuellt-material,marknadsforing">
+  <meta name="materialbank:platforms" content="google">
+  <meta name="materialbank:level" content="kom-igang">
+  <meta name="materialbank:intents" content="lara,prova,skapa">
+  <meta name="materialbank:duration" content="10">
+  <meta name="materialbank:keywords" content="Google Vids,video,bilder,musik,text,övergångar,marknadsföringsvideo,Drive">
+  <meta name="materialbank:featured" content="true">
+  <meta name="materialbank:status" content="published">
+  <meta name="materialbank:recommended-before" content="planera-innehall-ai,hitta-farger-ai,valj-bildstil,ai-bilder-som-hor-ihop">
+  <meta name="keywords" content="Google Vids, video, bilder, musik, text, övergångar, marknadsföringsvideo, Drive">
+</head>
+<body class="page-vids">
+<a class="skip-link" href="#main">Hoppa till innehållet</a>
+<header class="sitebar">
+<div class="sitebar-inner">
+<a class="brand" href="#top"><span class="brand-mark"></span>Novia · Praktisk AI-guide</a>
+<nav aria-label="Sidans delar" class="nav">
+<a href="#plan">Planera</a>
+<a href="#bilder">Bilder</a>
+<a href="#text">Text</a>
+<a href="#ljud">Musik</a>
+<a href="#export">Exportera</a>
+</nav>
+</div>
+</header>
+<section class="hero" id="top">
+<div class="hero-inner hero-grid">
+<div>
+<p class="eyebrow">Google Vids · steg för steg</p>
+<h1>Skapa en enkel video med bilder, text och musik</h1>
+<p class="lead">Har du några bilder som du vill sätta ihop till en video? Här börjar du från en tom fil och lär dig de viktigaste funktionerna i Google Vids – utan att du behöver kunna videoredigering från tidigare.</p>
+</div>
+<div class="goal-box">
+<strong>Målet</strong>
+<span>En enkel video på ungefär 20–40 sekunder med 4–6 scener, kort text, enkla övergångar och bakgrundsmusik.</span>
+</div>
+</div>
+</section>
+<main id="main">
+<section class="wide intro">
+<div class="notice">
+<strong>Om skärmbilderna:</strong> Bilderna kommer från ett demoexempel som heter <em>AI at Work</em>. Dina egna bilder, mappar och filnamn kommer förstås att se annorlunda ut. Google kan också ändra små detaljer i gränssnittet över tid.
+    </div>
+<div class="before">
+<p class="eyebrow">Bra att ha innan du börjar</p>
+<h2>Ha några bilder klara</h2>
+<p>Det enda du verkligen behöver för den här guiden är några bilder att arbeta med. Egna foton, produktbilder, stockbilder och AI-genererade bilder fungerar alla bra.</p>
+<ul class="check-list">
+<li><strong>Rekommenderat:</strong> 4–6 bilder som redan ligger i Google Drive.</li>
+<li><strong>Bra men inte nödvändigt:</strong> en ungefärlig idé om ordning och kort text för varje del.</li>
+<li><strong>Extra hjälp för en enhetlig helhet:</strong> tänk gärna på färger och bildstil innan du börjar.</li>
+</ul>
+<div class="prereq-grid">
+<article><h3>Behöver du planera innehållet?</h3><p>Få hjälp av AI att göra en enkel videoplan.</p><a class="btn secondary" href="skapa-video/01-planera-video-med-ai.html">Planera innehåll →</a></article>
+<article><h3>Behöver du hitta färger?</h3><p>Skapa en färgpalett som kan återkomma i text och grafik.</p><a class="btn secondary" href="skapa-video/02-hitta-farger-med-ai.html">Hitta färger →</a></article>
+<article><h3>Behöver du en bildstil?</h3><p>Se olika visuella uttryck innan du skapar AI-bilder.</p><a class="btn secondary" href="skapa-video/03-valj-bildstil.html">Hitta bildstil →</a></article>
+<article><h3>Behöver du skapa flera bilder?</h3><p>Lär dig få AI-bilder att kännas som samma serie.</p><a class="btn secondary" href="skapa-video/04-skapa-bilder-som-hor-ihop.html">Skapa bildserie →</a></article>
+</div>
+<p class="small-note"><strong>Har du redan bilder?</strong> Hoppa över länkarna ovan och fortsätt direkt med Google Vids.</p>
+</div>
+</section>
+<section class="section-heading wide" id="plan">
+<p class="eyebrow">Del 1</p>
+<h2>Starta och spara projektet</h2>
+<p>Börja med en tom liggande video och placera projektet i samma Drive-mapp som ditt övriga material.</p>
+</section>
+<section class="steps wide">
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">01</div>
+<p class="eyebrow">Skapa projekt</p>
+<h2>Börja med en tom liggande video</h2>
+<p>Öppna Google Vids och välj <strong>Liggande</strong>. Klicka sedan på <strong>Tom Vid</strong>.</p>
+<div class="tip"><strong>Tips:</strong> Börja gärna från tomt när du redan har bilder och en enkel plan. Då är det lättare att själv styra ordningen och uttrycket.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids startsida med Liggande och Tom Vid markerade." data-image="assets/vids/vid1.png"><img alt="Google Vids startsida med Liggande och Tom Vid markerade." src="assets/vids/vid1.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">02</div>
+<p class="eyebrow">Namnge</p>
+<h2>Ge videoprojektet ett tydligt namn</h2>
+<p>Klicka på filnamnet uppe till vänster och byt namn direkt. Då blir projektet lättare att hitta i Drive senare.</p>
+<div class="filename">marknadsforingsvideo-v1</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Tomt Google Vids-projekt där filnamnet uppe till vänster är markerat." data-image="assets/vids/vid2.png"><img alt="Tomt Google Vids-projekt där filnamnet uppe till vänster är markerat." src="assets/vids/vid2.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">03</div>
+<p class="eyebrow">Spara på rätt plats</p>
+<h2>Flytta projektet till din Drive-mapp</h2>
+<p>Klicka på <strong>mappikonen</strong> bredvid filnamnet. Välj den mapp där du vill samla projektets bilder och videofiler och klicka på <strong>Flytta</strong>.</p>
+<div class="important"><strong>Observera:</strong> Skärmbilden visar mappen <em>Theme B – Creating with AI</em> från demoexemplet. Välj din egen projektmapp.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Dialogruta för att flytta ett Google Vids-projekt till en mapp i Drive." data-image="assets/vids/vid3.png"><img alt="Dialogruta för att flytta ett Google Vids-projekt till en mapp i Drive." src="assets/vids/vid3.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+</section>
+<section class="section-heading wide" id="bilder">
+<p class="eyebrow">Del 2</p>
+<h2>Bygg videons scener med dina bilder</h2>
+<p>En enkel video kan bestå nästan helt av stillbilder. Lägg in en huvudbild per scen och bygg berättelsen i rätt ordning.</p>
+</section>
+<section class="steps wide">
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">04</div>
+<p class="eyebrow">Hämta från Drive</p>
+<h2>Öppna Uppladdningar</h2>
+<p>Klicka på <strong>Uppladdningar</strong> i verktygsfältet till höger. Där kan du öppna Google Drive och välja bilder som redan finns sparade där.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids där Uppladdningar är markerat i verktygsfältet till höger." data-image="assets/vids/vid4.png"><img alt="Google Vids där Uppladdningar är markerat i verktygsfältet till höger." src="assets/vids/vid4.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">05</div>
+<p class="eyebrow">Första scenen</p>
+<h2>Välj din första bild</h2>
+<p>Hitta projektets bilder i Drive och välj bilden som ska inleda videon. Den första scenen ska snabbt ge tittaren en anledning att fortsätta titta.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Drive-panel i Vids med flera bilder att välja mellan." data-image="assets/vids/vid5.png"><img alt="Google Drive-panel i Vids med flera bilder att välja mellan." src="assets/vids/vid5.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">06</div>
+<p class="eyebrow">Ny scen</p>
+<h2>Lägg till nästa scen</h2>
+<p>När den första bilden är på plats klickar du på <strong>+</strong> i tidslinjen för att skapa en ny scen.</p>
+<div class="tip"><strong>Enkelt är bra:</strong> En huvudbild per scen räcker långt i en kort marknadsföringsvideo.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids med första bilden infogad och plusknappen för ny scen markerad." data-image="assets/vids/vid6.png"><img alt="Google Vids med första bilden infogad och plusknappen för ny scen markerad." src="assets/vids/vid6.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">07</div>
+<p class="eyebrow">Bygg vidare</p>
+<h2>Lägg in resten av bilderna</h2>
+<p>Upprepa processen tills du har 4–6 scener i rätt ordning. Titta på helheten: varje bild ska föra berättelsen ett steg framåt.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="En ny scen i Google Vids med nästa bild infogad." data-image="assets/vids/vid7.png"><img alt="En ny scen i Google Vids med nästa bild infogad." src="assets/vids/vid7.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+</section>
+<section class="section-heading wide" id="text">
+<p class="eyebrow">Del 3</p>
+<h2>Lägg till kort text och enkel rörelse</h2>
+<p>Texten ska hjälpa tittaren att förstå poängen snabbt. Skriv kort och låt bilden göra en del av jobbet.</p>
+</section>
+<section class="steps wide">
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">08</div>
+<p class="eyebrow">Text på skärmen</p>
+<h2>Lägg till en titel</h2>
+<p>Öppna <strong>Text</strong> i verktygsfältet till höger och välj <strong>Lägg till en titel</strong>. Byt exempeltexten mot din egen korta scenrubrik.</p>
+<div class="example"><span>Exempel</span><p><strong>Var börjar jag?</strong> · <strong>Så fungerar det</strong> · <strong>Spara tid i vardagen</strong></p></div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids textpanel där Lägg till en titel är markerat." data-image="assets/vids/vid8.png"><img alt="Google Vids textpanel där Lägg till en titel är markerat." src="assets/vids/vid8.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">09</div>
+<p class="eyebrow">Läsbarhet</p>
+<h2>Formatera och placera texten</h2>
+<p>Markera textrutan och använd formateringsverktygen för typsnitt, storlek, justering och färg. Placera texten där den syns tydligt utan att täcka det viktigaste i bilden.</p>
+<ul class="check-list">
+<li>Använd samma typografiska stil i hela videon.</li>
+<li>Välj tydlig kontrast mellan text och bakgrund.</li>
+<li>Testa om texten fortfarande är lätt att läsa när videon visas i mindre format.</li>
+</ul>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids med formateringsverktygen för en markerad textruta." data-image="assets/vids/vid9.png"><img alt="Google Vids med formateringsverktygen för en markerad textruta." src="assets/vids/vid9.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">10</div>
+<p class="eyebrow">Frivilligt</p>
+<h2>Öppna Animation</h2>
+<p>Vill du ge texten lite rörelse kan du öppna <strong>Animation</strong> för det markerade objektet. Håll effekten diskret.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids animationspanel öppen för ett textobjekt." data-image="assets/vids/vid10.png"><img alt="Google Vids animationspanel öppen för ett textobjekt." src="assets/vids/vid10.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">11</div>
+<p class="eyebrow">Inledande effekt</p>
+<h2>Välj hur texten kommer in</h2>
+<p>Du kan välja en enkel inledande effekt. I demoexemplet används <strong>Skrivmaskin</strong>. Du behöver inte välja samma effekt.</p>
+<p>Vill du styra början och slutet separat aktiverar du <strong>Separata animationer vid start och slut</strong>.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids animationspanel med inledande animation och separata start- och slutanimationer markerade." data-image="assets/vids/vid11.png"><img alt="Google Vids animationspanel med inledande animation och separata start- och slutanimationer markerade." src="assets/vids/vid11.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">12</div>
+<p class="eyebrow">Avslutande effekt</p>
+<h2>Välj hur texten försvinner</h2>
+<p>Under <strong>Avslutande</strong> kan du välja en enkel utgångseffekt. Det går också bra att välja <strong>Ingen</strong> och låta texten ligga kvar tills scenen byts.</p>
+<div class="tip"><strong>Var konsekvent:</strong> En eller två återkommande effekter ser oftast bättre ut än en ny effekt i varje scen.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids animationspanel där Avslutande är markerat." data-image="assets/vids/vid12.png"><img alt="Google Vids animationspanel där Avslutande är markerat." src="assets/vids/vid12.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">13</div>
+<p class="eyebrow">Testa</p>
+<h2>Förhandsgranska videon</h2>
+<p>Klicka på <strong>Spela upp</strong> och se hela videon i följd. Det är lättare att bedöma rytmen när du tittar utan att stanna mellan scenerna.</p>
+<ul class="check-list"><li>Hinner du läsa texten?</li><li>Är någon scen för lång eller för kort?</li><li>Förstår en ny tittare vad videon handlar om?</li></ul>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids tidslinje där knappen Spela upp är markerad." data-image="assets/vids/vid13.png"><img alt="Google Vids tidslinje där knappen Spela upp är markerad." src="assets/vids/vid13.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+</section>
+<section class="section-heading wide" id="ljud">
+<p class="eyebrow">Del 4</p>
+<h2>Lägg till övergångar och bakgrundsmusik</h2>
+<p>Övergångar och musik ska stöda berättelsen, inte konkurrera med den.</p>
+</section>
+<section class="steps wide">
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">14</div>
+<p class="eyebrow">Musikbibliotek</p>
+<h2>Öppna Stock och välj Musik</h2>
+<p>Klicka på <strong>Stock</strong> i verktygsfältet till höger. Välj sedan mediatypen <strong>Musik</strong>.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids Stock-panel där Musik är markerat." data-image="assets/vids/vid14.png"><img alt="Google Vids Stock-panel där Musik är markerat." src="assets/vids/vid14.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">15</div>
+<p class="eyebrow">Välj musik</p>
+<h2>Sök, lyssna och lägg till ett spår</h2>
+<p>Sök efter en stämning som passar företaget och videon. Förhandslyssna på flera spår och klicka på <strong>+</strong> när du hittar ett som fungerar.</p>
+<div class="example"><span>Prova sökord</span><p><strong>uplifting corporate</strong> · <strong>warm business</strong> · <strong>light technology</strong> · <strong>gentle upbeat</strong></p></div>
+<p>Instrumental musik är ofta enklast om du senare vill lägga till berättarröst.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids musikbibliotek med en sökning och plusknapp för att lägga till ett musikspår." data-image="assets/vids/vid15.png"><img alt="Google Vids musikbibliotek med en sökning och plusknapp för att lägga till ett musikspår." src="assets/vids/vid15.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">16</div>
+<p class="eyebrow">Övergångar</p>
+<h2>Lägg till enkla övergångar mellan scener</h2>
+<p>Klicka på övergångskontrollen mellan två scener och välj en enkel effekt. En toning eller en annan diskret övergång räcker oftast.</p>
+<div class="tip"><strong>Tips:</strong> Samma övergång genom hela videon ger ofta ett lugnare och mer professionellt intryck.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids med en övergång markerad mellan två scener och panelen med övergångsalternativ." data-image="assets/vids/vid16.png"><img alt="Google Vids med en övergång markerad mellan två scener och panelen med övergångsalternativ." src="assets/vids/vid16.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">17</div>
+<p class="eyebrow">Timing</p>
+<h2>Justera när texten visas</h2>
+<p>I tidslinjen syns texten som ett eget fält. Dra i början eller slutet för att styra när texten ska visas och försvinna.</p>
+<p>Kort text kan gärna ligga kvar under större delen av en kort scen.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids tidslinje där textens start- och sluttid kan justeras." data-image="assets/vids/vid17.png"><img alt="Google Vids tidslinje där textens start- och sluttid kan justeras." src="assets/vids/vid17.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">18</div>
+<p class="eyebrow">Ljud</p>
+<h2>Öppna ljudets inställningar</h2>
+<p>Högerklicka på det blå musikspåret i tidslinjen. Här hittar du bland annat <strong>Ljudoptimering</strong> och <strong>Justera ljudtidskod</strong>.</p>
+<div class="important"><strong>Om musiken är längre än videon:</strong> använd <strong>Justera ljudtidskod</strong> för att anpassa vilken del av musikspåret som används.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Snabbmeny för musikspåret i Google Vids där ljudinställningar visas." data-image="assets/vids/vid18.png"><img alt="Snabbmeny för musikspåret i Google Vids där ljudinställningar visas." src="assets/vids/vid18.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">19</div>
+<p class="eyebrow">Finslipa</p>
+<h2>Justera volym och tona in / tona ut</h2>
+<p>Öppna ljudinställningarna och justera musikens volym. Lägg gärna till en kort <strong>Tona in</strong> och <strong>Tona ut</strong> så att videon börjar och slutar mjukt.</p>
+<p>För en kort video är ungefär <strong>1–3 sekunder</strong> en bra utgångspunkt för toningen.</p>
+<div class="tip"><strong>Om du lägger till röst senare:</strong> sänk musiken så att talet alltid är tydligt. Musik ska ligga i bakgrunden.</div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids ljudpanel med volym, tona in och tona ut." data-image="assets/vids/vid19.png"><img alt="Google Vids ljudpanel med volym, tona in och tona ut." src="assets/vids/vid19.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+</section>
+<section class="section-heading wide" id="export">
+<p class="eyebrow">Del 5</p>
+<h2>Exportera och dela videon</h2>
+<p>När du är nöjd skapar du en videoversion som kan delas utanför själva redigeringsprojektet.</p>
+</section>
+<section class="steps wide">
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">20</div>
+<p class="eyebrow">Export</p>
+<h2>Exportera till Drive</h2>
+<p>Öppna menyn bredvid <strong>Dela</strong> och välj <strong>Exportera till Drive</strong>. Google Vids skapar då en videoversion av projektet.</p>
+<p class="small-note">Behåll även det redigerbara Vids-projektet. Då kan du enkelt ändra text, bilder eller musik senare.</p>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids Dela-meny där Exportera till Drive är markerat." data-image="assets/vids/vid20.png"><img alt="Google Vids Dela-meny där Exportera till Drive är markerat." src="assets/vids/vid20.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+<article class="step-card">
+<div class="step-copy">
+<div class="step-number">21</div>
+<p class="eyebrow">Dela</p>
+<h2>Kopiera länken till den exporterade videon</h2>
+<p>När exporten är klar kan du öppna videon eller välja <strong>Kopiera länk</strong>. Kontrollera delningsinställningarna innan du skickar länken till andra.</p>
+<div class="output"><span>Klart</span><strong>Du har nu en enkel marknadsföringsvideo som kan delas och utvecklas vidare.</strong></div>
+</div>
+<figure class="shot"><button class="image-button" data-alt="Google Vids dialogruta för slutförd export med Kopiera länk markerat." data-image="assets/vids/vid21.png"><img alt="Google Vids dialogruta för slutförd export med Kopiera länk markerat." src="assets/vids/vid21.png"/><span>Klicka på bilden för att förstora</span></button></figure>
+</article>
+</section>
+<section class="wide finish-card">
+<p class="eyebrow">Innan du publicerar</p>
+<h2>Gör en sista kontroll</h2>
+<ul class="check-list">
+<li>Förstår en ny tittare vad företaget erbjuder?</li>
+<li>Är texten kort, tydlig och lätt att läsa på en liten skärm?</li>
+<li>Är fakta, priser och löften korrekta?</li>
+<li>Har du rätt att använda bilder, musik och annat material?</li>
+<li>Om AI-genererade bilder kan uppfattas som verkliga personer eller verkliga händelser: fundera på om tittaren behöver tydlig information om att materialet är AI-genererat.</li>
+<li>Är nästa steg tydligt, till exempel <em>Kontakta oss</em>, <em>Boka tid</em> eller <em>Läs mer</em>?</li>
+</ul>
+<div class="final-note"><strong>Nästa steg:</strong> När grunderna sitter kan du bygga vidare med berättarröst, captions/textning, bättre tillgänglighet, tydligare CTA och mer genomarbetad visuell identitet.</div>
+</section>
+<div class="wide next"><a class="btn secondary" href="skapa-video/index.html">← Visuellt material med AI</a><a class="btn" href="skapa-video/06-redo-att-publicera.html">Publiceringskontroll →</a></div>
+</main>
+<dialog class="lightbox" id="lightbox">
+<button aria-label="Stäng förstorad bild" class="close" type="button">×</button>
+<img alt="" src=""/>
+</dialog>
+
+</body>
+</html>

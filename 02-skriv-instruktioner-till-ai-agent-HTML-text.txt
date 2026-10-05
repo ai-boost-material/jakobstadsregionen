@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Praktisk guide för småföretagare: skriv tydliga instruktioner till en AI-agent med uppgift, input, kunskap, regler och output." name="description"/>
+<title>Skriv instruktioner till en AI-agent · Novia</title>
+
+
+
+
+<link href="assets/css/shared.css" rel="stylesheet"/><script defer="True" src="assets/js/shared.js"></script>
+  <meta name="materialbank:id" content="ai-agent-instruktioner">
+  <meta name="materialbank:type" content="guide">
+  <meta name="materialbank:summary" content="Skriv tydliga instruktioner till en AI-agent med fem delar: uppgift, input, kunskap, regler och output.">
+  <meta name="materialbank:topics" content="ai-agenter,effektivisering,kommunikation">
+  <meta name="materialbank:platforms" content="verktygsoberoende">
+  <meta name="materialbank:level" content="kom-igang">
+  <meta name="materialbank:intents" content="lara,prova">
+  <meta name="materialbank:duration" content="5">
+  <meta name="materialbank:keywords" content="agent,instruktion,prompt,uppgift,input,kunskap,regler,output,arbetsbeskrivning">
+  <meta name="materialbank:featured" content="true">
+  <meta name="materialbank:status" content="published">
+  <meta name="keywords" content="agent, instruktion, prompt, uppgift, input, kunskap, regler, output, arbetsbeskrivning">
+</head>
+<body class="page-agent-instructions">
+<a class="skip" href="#main">Hoppa till innehållet</a>
+<header class="sitebar"><div class="sitebar-inner"><a class="brand" href="01-vad-ar-en-ai-agent.html"><span class="brand-mark"></span>Novia · Praktisk AI-guide</a><div class="series">AI-agenter · Del 2</div></div></header>
+<section class="hero"><div class="hero-inner"><div><p class="eyebrow">AI-agenter · kom igång</p><h1>Skriv instruktionerna innan du bygger agenten</h1><p class="lead">Du behöver inte börja i Copilot, Gemini eller något annat agentverktyg. Börja med fem enkla frågor. När de är tydliga har du redan gjort den viktigaste delen.</p></div><div class="hero-card"><strong>Fem delar</strong><span>Uppgift · Input · Kunskap · Regler · Output. Det räcker långt för din första enkla agent.</span></div></div></section>
+<main id="main">
+<section class="wide intro"><div class="notice"><strong>På den här sidan bygger du inte själva agenten ännu.</strong> Du planerar bara instruktionerna. När instruktionerna är klara kan samma grund användas i olika verktyg som stöder agenter eller anpassade AI-assistenter.</div></section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">Överblick</p><h2>Fem frågor som gör agenten tydlig</h2><p>De här delarna hjälper dig skilja på vad agenten ska göra, vad användaren måste ge och vilka fakta och regler som ska styra svaret.</p></div><div class="five"><div><b>1 · Uppgift</b><span>Vad ska agenten hjälpa till med?</span></div><div><b>2 · Input</b><span>Vad varierar från gång till gång?</span></div><div><b>3 · Kunskap</b><span>Vilka fakta behöver agenten?</span></div><div><b>4 · Regler</b><span>Hur ska agenten arbeta?</span></div><div><b>5 · Output</b><span>Hur ska resultatet se ut?</span></div></div></section>
+<section class="wide section">
+<article class="step"><div class="num">01</div><div><p class="eyebrow">Uppgift</p><h3>Bestäm ett tydligt jobb</h3><p>Börja med en återkommande arbetsuppgift. Första agenten blir ofta bäst om uppdraget är ganska smalt.</p><div class="question"><strong>Fråga dig:</strong> “Vad vill jag att agenten ska hjälpa mig eller en medarbetare att göra om och om igen?”</div><div class="example"><strong>Exempel:</strong> Skapa ett första utkast till offert utifrån en kundförfrågan.</div></div></article>
+<article class="step"><div class="num">02</div><div><p class="eyebrow">Input</p><h3>Bestäm vad användaren behöver ge</h3><p>Input är information som <strong>ändras från fall till fall</strong>. Det kan vara kundens namn, datum, produkt, antal, önskemål eller annan situationsspecifik information.</p><div class="question"><strong>Fråga dig:</strong> “Vilka uppgifter behöver agenten varje gång för att kunna göra ett bra jobb?”</div><div class="example"><strong>Exempel för en offertagent:</strong> tjänst, antal deltagare, önskat datum, genomförandeform och särskilda önskemål.</div></div></article>
+<article class="step"><div class="num">03</div><div><p class="eyebrow">Kunskap</p><h3>Bestäm vad agenten behöver veta</h3><p>Kunskap är fakta som hjälper agenten att göra uppgiften utan att gissa. Det kan vara priser, tjänster, produktinformation, öppettider, policydokument eller arbetsrutiner.</p><div class="question"><strong>Fråga dig:</strong> “Vilka fakta måste agenten känna till för att kunna ge ett användbart svar?”</div>
+<div class="knowledge-grid">
+<article><span class="tag">Sätt 1</span><h4>I instruktionerna</h4><p>Passar för kort och ganska stabil information, eller i enklare/gratis agentverktyg där du inte kan lägga till separata kunskapskällor.</p><p class="small"><strong>Exempel:</strong> några standardpriser eller en kort lista med tjänster.</p></article>
+<article><span class="tag">Sätt 2</span><h4>Som filer eller kunskapskällor</h4><p>Om verktyget stöder det är detta ofta bättre för längre material. Då kan du lägga till exempelvis prislistor, guider, produktblad eller interna instruktioner som agentens kunskap.</p><p class="small"><strong>Tips:</strong> håll källorna relevanta och uppdaterade.</p></article>
+<article><span class="tag">Sätt 3</span><h4>I den aktuella chatten</h4><p>Användaren kan också ge information just när agenten används. Det passar särskilt för information som är tillfällig, ny eller specifik för ett enda ärende.</p><p class="small"><strong>Exempel:</strong> dagens prislista, kundens mejl eller ett dokument som bara gäller just detta fall.</p></article>
+</div>
+<div class="example"><strong>Viktigt:</strong> Hur kunskap läggs till varierar mellan AI-tjänster. En fil som du bifogar i en enskild chatt är inte automatiskt en permanent kunskapskälla för alla framtida chattar.</div>
+</div></article>
+<article class="step"><div class="num">04</div><div><p class="eyebrow">Regler</p><h3>Bestäm hur agenten ska arbeta</h3><p>Regler styr vad agenten får göra, vad den ska undvika och vad som ska hända när något är oklart.</p><div class="question"><strong>Fråga dig:</strong> “Vilka enkla regler hjälper agenten att göra rätt även när situationen inte är perfekt?”</div><div class="example"><strong>Bra första regler kan vara:</strong><ul><li>Använd bara priser som finns i företagets information.</li><li>Hitta inte på fakta som saknas.</li><li>Fråga efter viktig information om den saknas.</li><li>Var tydlig med vad som är ett utkast och vad som är ett beslut.</li><li>Påminn om mänsklig kontroll när det behövs.</li></ul></div></div></article>
+<article class="step"><div class="num">05</div><div><p class="eyebrow">Output</p><h3>Beskriv hur ett bra svar ska se ut</h3><p>Output betyder resultatet som agenten ska skapa. Ju tydligare du beskriver formen, desto lättare blir det att få användbara och jämna svar.</p><div class="question"><strong>Fråga dig:</strong> “Vad vill jag kunna kopiera, läsa eller använda när agenten är färdig?”</div><div class="example"><strong>Du kan beskriva:</strong> format, rubriker, ton, språk, längd, tabell eller punktlista, vad som ska stå först och vad som alltid måste finnas med.</div></div></article>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">Enkel mall</p><h2>Samla allt i en instruktion</h2><p>Du behöver inte skriva avancerade “system prompts”. En tydlig arbetsbeskrivning räcker bra som start.</p></div>
+<div class="template"><h3>Kopierbar struktur</h3><pre>UPPGIFT
+[Beskriv vad agenten ska hjälpa till med.]
+
+INPUT FRÅN ANVÄNDAREN
+[Lista informationen som varierar från gång till gång.]
+
+KUNSKAP
+[Beskriv vilken företags-, produkt- eller processkunskap agenten behöver och var den finns.]
+
+REGLER
+[Lista de viktigaste reglerna, begränsningarna och vad agenten ska göra om information saknas.]
+
+OUTPUT
+[Beskriv hur det färdiga resultatet ska se ut.]</pre></div>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">Prova själv</p><h2>Bygg ett första instruktionsutkast här</h2><p>Fyll i det du vet. Du behöver inte formulera dig perfekt. Knappen sammanställer bara dina anteckningar till en tydlig struktur som du kan kopiera vidare.</p></div>
+<div class="builder">
+<div class="builder-grid">
+<div class="field full"><label for="task">1 · Uppgift</label><small>Vad ska agenten hjälpa till med?</small><input id="task" placeholder="Exempel: Skapa ett första offertutkast utifrån en kundförfrågan."/></div>
+<div class="field"><label for="input">2 · Input från användaren</label><small>Skriv gärna en punkt per rad.</small><textarea id="input" placeholder="Tjänst\nAntal\nDatum\nSärskilda önskemål"></textarea></div>
+<div class="field"><label for="knowledge">3 · Kunskap</label><small>Vilka fakta behövs och var finns de?</small><textarea id="knowledge" placeholder="Prislista finns som fil\nÖppettider\nLeveransalternativ"></textarea></div>
+<div class="field"><label for="rules">4 · Regler</label><small>Vad ska agenten göra eller undvika?</small><textarea id="rules" placeholder="Hitta inte på priser\nFråga om viktig information saknas\nMarkera resultatet som utkast"></textarea></div>
+<div class="field"><label for="output">5 · Output</label><small>Hur ska det färdiga svaret se ut?</small><textarea id="output" placeholder="Kort professionellt utkast med rubrik, sammanfattning, pris, nästa steg och sådant som behöver kontrolleras."></textarea></div>
+</div>
+<div class="actions"><button class="btn" id="build" type="button">Skapa instruktionsutkast</button><button class="btn secondary" id="clear" type="button">Rensa</button></div>
+<div class="output" id="output-box"><h3>Ditt instruktionsutkast</h3><pre id="assembled"></pre><div class="actions"><button class="btn" id="copy" type="button">Kopiera texten</button><span class="copy-status" id="copy-status"></span></div></div>
+</div>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">Innan du går vidare</p><h2>Gör en snabb rimlighetskontroll</h2></div>
+<div class="review"><div><strong>Är uppgiften tydlig?</strong>En ny medarbetare borde kunna förstå vad agenten ska hjälpa till med.</div><div><strong>Är input och kunskap separerade?</strong>Input ändras från fall till fall. Kunskap är fakta agenten behöver använda.</div><div><strong>Finns regler för det som kan gå fel?</strong>Till exempel saknad information, osäkerhet eller sådant agenten inte får hitta på.</div><div><strong>Vet agenten hur svaret ska se ut?</strong>Beskriv hellre ett konkret resultat än “ge ett bra svar”.</div></div>
+</section>
+<section class="wide next"><div><p class="eyebrow">Nästa steg</p><h2>Nu är du redo att bygga agenten i ett verktyg</h2><p class="small">I nästa praktiska guide visar vi samma idé steg för steg i Microsoft Copilot. Senare kan samma grund också användas i andra agentverktyg.</p></div><a class="btn" href="03-bygg-agent-i-microsoft-copilot.html">Nästa guide: Microsoft Copilot</a></section>
+</main>
+
+</body>
+</html>

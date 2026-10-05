@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="En enkel introduktion för småföretagare: vad är en AI-agent och vad är skillnaden mellan en agent och en vanlig AI-chatt?" name="description"/>
+<title>Vad är en AI-agent? · Novia</title>
+
+
+
+
+<link href="assets/css/shared.css" rel="stylesheet"/><script defer="True" src="assets/js/shared.js"></script>
+  <meta name="materialbank:id" content="ai-agent-intro">
+  <meta name="materialbank:type" content="guide">
+  <meta name="materialbank:summary" content="Förstå vad en AI-agent är, hur den skiljer sig från en vanlig AI-chatt och när den kan vara värd att testa i ett litet företag.">
+  <meta name="materialbank:topics" content="ai-agenter,effektivisering">
+  <meta name="materialbank:platforms" content="verktygsoberoende">
+  <meta name="materialbank:level" content="kom-igang">
+  <meta name="materialbank:intents" content="forsta,lara">
+  <meta name="materialbank:duration" content="4">
+  <meta name="materialbank:keywords" content="agent,AI-agent,AI agent,chatt,chatbot,automation,arbetsflöde,återanvändbar,småföretag">
+  <meta name="materialbank:featured" content="true">
+  <meta name="materialbank:status" content="published">
+  <meta name="keywords" content="agent, AI-agent, AI agent, chatt, chatbot, automation, arbetsflöde, återanvändbar, småföretag">
+</head>
+<body class="page-agent-intro">
+<a class="skip" href="#main">Hoppa till innehållet</a>
+<header class="sitebar"><div class="sitebar-inner"><a class="brand" href="#top"><span class="brand-mark"></span>Novia · Praktisk AI-guide</a><div class="series">AI-agenter · Del 1</div></div></header>
+<section class="hero" id="top"><div class="hero-inner"><div><p class="eyebrow">AI-agenter · kom igång</p><h1>Vad är en AI-agent?</h1><p class="lead">Tänk mindre “robot som gör allt själv” och mer “AI-assistent som redan har fått sin arbetsbeskrivning”. Det är ofta så du enklast kommer igång.</p></div><div class="hero-card"><strong>Den korta versionen</strong><span>En vanlig AI-chatt börjar ganska öppet. En agent kan starta med sparade instruktioner om uppgift, kunskap, regler och hur svaret ska se ut.</span></div></div></section>
+<main id="main">
+<section class="wide intro"><div class="notice"><strong>Begreppet agent används lite olika i olika AI-tjänster.</strong> I den här guideserien menar vi i första hand en återanvändbar AI-assistent med tydliga instruktioner och vid behov egen kunskap. Mer avancerade agenter kan också använda verktyg och utföra handlingar, men du behöver inte börja där.</div></section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">1 · Skillnaden i praktiken</p><h2>Vanlig chatt eller agent?</h2><p>Båda använder AI. Skillnaden är framför allt hur mycket du behöver förklara från början varje gång.</p></div>
+<div class="compare">
+<article class="panel chat"><span class="badge">Vanlig AI-chatt</span><h3>Du briefar för den aktuella uppgiften</h3><ul><li>Du berättar vad du vill ha hjälp med i chatten.</li><li>Du kan ändra riktning fritt från fråga till fråga.</li><li>Passar bra för idéarbete, engångsuppgifter och öppna frågor.</li><li>Om samma regler och bakgrund behövs igen får du ofta ge dem på nytt.</li></ul></article>
+<article class="panel agent"><span class="badge">AI-agent</span><h3>Arbetsbeskrivningen finns redan</h3><ul><li>Agenten har ett tydligt återkommande uppdrag.</li><li>Instruktioner och regler kan återanvändas i nya chattar.</li><li>Agenten kan få tillgång till relevant kunskap, till exempel filer.</li><li>Användaren behöver främst ge informationen som varierar från fall till fall.</li></ul></article>
+</div>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">2 · Ett enkelt sätt att tänka</p><h2>Från generell AI till specialiserad hjälpreda</h2><p>Du behöver inte programmera för att börja. Börja med att ge AI:n en stabil arbetsbeskrivning.</p></div>
+<div class="flow"><div class="flow-card"><strong>Vanlig AI</strong>Kan hjälpa med många olika saker.</div><div class="arrow">→</div><div class="flow-card"><strong>Dina instruktioner</strong>Förklarar uppgift, input, kunskap, regler och output.</div><div class="arrow">→</div><div class="flow-card"><strong>Din agent</strong>Blir specialiserad på just den återkommande uppgiften.</div></div>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">3 · Exempel</p><h2>Samma kundförfrågan – olika mycket förarbete</h2><p>Anta att ett företag ofta får offertförfrågningar.</p></div>
+<div class="example example-grid"><div><h3>I en vanlig chatt</h3><p>Du kanske behöver förklara samma bakgrund flera gånger:</p><div class="quote"><code>Vi är ett företag som säljer utbildningar. Här är våra priser och regler. Kunden vill ha... Skriv ett offertutkast och hitta inte på något som saknas.</code></div></div><div><h3>Med en agent</h3><p>Agenten kan redan känna till sitt uppdrag, företagets regler och hur ett offertutkast ska se ut. Då kan användaren i stället skriva:</p><div class="quote"><code>Kunden vill ha AI-utbildning för 8 personer under vecka 42. Online. De vill ha praktiska exempel från kontorsarbete.</code></div><p>Agenten använder sedan sina sparade instruktioner tillsammans med informationen från den aktuella situationen.</p></div></div>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">4 · När är en agent värd att bygga?</p><h2>Återkommande + tydligt = bra kandidat</h2></div>
+<div class="when-grid"><article class="when yes"><h3>Agent passar ofta bra när...</h3><ul><li>du gör samma typ av uppgift om och om igen</li><li>samma regler eller företagsfakta återkommer</li><li>användaren ger några uppgifter som varierar från gång till gång</li><li>du vill ha ett ganska tydligt och konsekvent resultat</li></ul></article><article class="when no"><h3>Vanlig chatt räcker ofta när...</h3><ul><li>du bara gör uppgiften en gång</li><li>du vill brainstorma fritt</li><li>frågorna ändras helt från gång till gång</li><li>du ännu inte vet vilken arbetsprocess du vill standardisera</li></ul></article></div>
+</section>
+<section class="wide section"><div class="section-head"><p class="eyebrow">5 · Bra att veta</p><h2>En agent är inte magisk</h2></div>
+<div class="myth"><article><strong>Den vet inte automatiskt allt om ditt företag</strong>Du behöver ge den relevant kunskap och hålla den uppdaterad.</article><article><strong>Den får inte automatiskt tillgång till dina system</strong>Åtkomst till filer, e-post eller andra system beror på verktyget och vilka kopplingar du uttryckligen använder.</article><article><strong>Den kan fortfarande göra fel</strong>Viktiga fakta, priser, beslut och kundkommunikation behöver en rimlig mänsklig kontroll.</article></div>
+<div class="check"><p class="eyebrow">Snabbtest</p><h3>Har du en bra första agent-idé?</h3><p>Kryssa i det som stämmer.</p><div class="check-grid"><label><input class="agent-check" type="checkbox"/> <span>Jag gör uppgiften återkommande.</span></label><label><input class="agent-check" type="checkbox"/> <span>Det finns några tydliga regler eller fakta som återkommer.</span></label><label><input class="agent-check" type="checkbox"/> <span>Jag kan beskriva ungefär hur ett bra resultat ska se ut.</span></label></div><div class="result" id="result">Kryssa i rutorna ovan. Två eller tre ja betyder ofta att uppgiften är värd att testa som en enkel agent.</div></div>
+</section>
+<section class="wide next"><div><p class="eyebrow">Nästa guide</p><h2>Skriv instruktionerna innan du bygger agenten</h2><p class="small">I nästa steg delar du upp agenten i fem enkla delar: uppgift, input, kunskap, regler och output.</p></div><a class="btn" href="02-skriv-instruktioner-till-ai-agent.html">Gå till del 2 →</a></section>
+</main>
+
+</body>
+</html>
